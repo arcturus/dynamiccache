@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>ProgrammableCache Test</title>
+</head>
+<body>
+<script>
+    if (navigator.serviceWorker) {
+        navigator.serviceWorker.register('./sw.js');
+    } else {
+        console.info('No SW present :(');
+    }
+</script>
+<section>
+    <h2>Contents of the cache</h2>
+    <article id="contents"></article>
+</section>
+<section>
+    <h2>Info</h2>
+    <p>
+        You are viewing an example of ServiceWorkers, in this case is a cache that allows you to modify the contents of the offline cache.
+    </p>
+    <p>
+        Some examples on how to modify this content are:
+    </p>
+</section>
+</body>
+</html>

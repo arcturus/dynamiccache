@@ -1,0 +1,24 @@
+{
+  "name": "dynamiccache",
+  "version": "0.0.1",
+  "description": "Middleware used in ServiceWorkersWare to act as a cache which content can be manipulated dynamically",
+  "main": "dist/programmablecache.js",
+  "scripts": {
+    "preinstall": "bower install"
+  },
+  "author": "Francisco Jordano <francisco@jordano.es>",
+  "license": "MPL",
+  "devDependencies": {
+    "browserify": "^9.0.3",
+    "gulp": "^3.8.11",
+    "gulp-jshint": "^1.9.2",
+    "gulp-sourcemaps": "^1.5.0",
+    "gulp-watch": "^4.1.1",
+    "gulp-webserver": "^0.9.0",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.0.0"
+  },
+  "dependencies": {
+    "sw-cache-helper": "git+https://git@github.com/arcturus/sw-cache-helper.git"
+  }
+}
