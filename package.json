@@ -2,7 +2,7 @@
   "name": "dynamiccache",
   "version": "0.0.1",
   "description": "Middleware used in ServiceWorkersWare to act as a cache which content can be manipulated dynamically",
-  "main": "dist/programmablecache.js",
+  "main": "dist/dynamiccache.js",
   "scripts": {
   },
   "author": "Francisco Jordano <francisco@jordano.es>",
