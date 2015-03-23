@@ -32,5 +32,14 @@ You'll find the following methods:
 Why there is no `get` method? The middleware will be returning the content during the `onFetch` phase, so any HTTP request will give you the content.
 
 
+## Modifying the content
+All this functions are available if you execute them in the ServiceWorker scope. So you can call the previous methods to perform actions.
+But this middleware allows you to modify the content through any client that has access to the worker. The communication is done via
+`postMessage` (or [BroadcastChannel API](https://developer.mozilla.org/en-US/docs/Web/API/Broadcast_Channel_API) if available) with an specific protocol.
+
+
+In order to make this easier you can use the [DynamicCacheClient](https://github.com/arcturus/dynamiccacheclient), a simple javascript library that you can use from a window, Worker or Sharedworker.
+
+
 
 
