@@ -4,7 +4,6 @@
   "description": "Middleware used in ServiceWorkersWare to act as a cache which content can be manipulated dynamically",
   "main": "dist/programmablecache.js",
   "scripts": {
-    "preinstall": "bower install"
   },
   "author": "Francisco Jordano <francisco@jordano.es>",
   "license": "MPL",

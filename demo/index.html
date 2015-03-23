@@ -24,6 +24,27 @@
     <p>
         Some examples on how to modify this content are:
     </p>
+    <ul id="cache_content">
+
+    </ul>
 </section>
+<script src="../client/dynamiccache_client.js"></script>
+<script>
+    window.addEventListener('DOMContentLoaded', function() {
+        var list = document.getElementById('cache_content');
+        list.innerHTML = '';
+        DynamicCacheClient.listAll().then(function(elements) {
+            elements.forEach(function(url) {
+                var li = document.createElement('li');
+                var a = document.createElement('a');
+                a.href = url;
+                a.target = '_blanc';
+                a.textContent = url;
+                li.appendChild(a);
+                list.appendChild(li);
+            });
+        });
+    });
+</script>
 </body>
 </html>
